@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+
+
+</head>
+
+<body>
+
+    <nav class="bg-dark pt-3 pb-3  " data-spy="affix">
+
+        <div class="row d-flex justify-content-between  ">
+            <!-- Colocacion de imagenes -->
+            <div class="pl-5 ">
+                <img src="Palabras.png" alt="Letras instagram" width="105vw">
+            </div>
+
+            <div class="d-flex align-items-center pr-5">
+
+                <!-- Dropdown-->
+                <div class="dropdown col pl-0 pr-0 " alt="Boton modal">
+                    <button class="btn  btn-primary-outline dropdown-toggle " type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Log out</a>
+                    </div>
+                </div>
+
+            </div>
+
+    </nav>
+
+    <div class="container-fluid p-0 d-flex flex-column justify-item-center">
+
+
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div id="tradingview_33905"></div>
+            <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/symbols/NASDAQ-AAPL/"
+                    rel="noopener" target="_blank"><span class="blue-text">AAPL Gráfico</span></a> por TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+                new TradingView.widget(
+                    {
+                        "width": 980,
+                        "height": 610,
+                        "symbol": "NASDAQ:AAPL",
+                        "interval": "D",
+                        "timezone": "Etc/UTC",
+                        "theme": "light",
+                        "style": "1",
+                        "locale": "es",
+                        "toolbar_bg": "#f1f3f6",
+                        "enable_publishing": false,
+                        "allow_symbol_change": true,
+                        "container_id": "tradingview_33905"
+                    }
+                );
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+
+        <!-- Boton modal -->
+        <div class="container d-flex justify-content-between">
+            <!-- Large modal -->
+            <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="requires-validation" novalidate>
+                                <div class="d-flex ">
+                                    <div class="col-md-4 ">
+                                        <p>
+                                            Card#
+                                            <input class="form-control" type="text" name="Card#" placeholder="XXXXXXXXX"
+                                                required>
+                                        </p>
+                                        <div class="valid-feedback">Card field is valid!</div>
+                                        <div class="invalid-feedback">Card field cannot be blank!</div>
+                                        <div class="col-md-4">
+                                            <p>
+                                                CVC#
+                                                <input class="form-control" type="text" name="Card#"
+                                                    placeholder="XXXXXXXXX" required>
+                                            </p>
+                                            <div class="valid-feedback">Card field is valid!</div>
+                                            <div class="invalid-feedback">Card field cannot be blank!</div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p>
+                                                Card#
+                                                <input class="form-control" type="text" name="Card#" placeholder="XXXXXXXXX"
+                                                    required>
+                                            </p>
+                                            <div class="valid-feedback">Card field is valid!</div>
+                                            <div class="invalid-feedback">Card field cannot be blank!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" type="submit">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-danger" data-toggle="modal"
+                    data-target="#myModal">Vender</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="alert alert-danger mb-0" role="alert">
+                                <h4 class="alert-heading">Oh no!</h4>
+                                <p>Ha habido un problema con su dinero, estamos intentando solucionarlo.</p>
+                                <hr>
+                                <p class="mb-0">No sabría decirte una estimación de cuanto lo tendrás de vuelta, tu
+                                    piensa como si lo hubieras perdido</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
